@@ -2,22 +2,29 @@
     <head>
         <title>ItLib</title>
         <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body   >
-        <div class="container" align="center">
-            <div>
-                <form action="" method="post">
-                    <p></p><label for="login">Login</label></p>
-                    <input type="text" name ="login" id = "login" title="login"/>
-                    <p><label for="password">Password</label></p>
-                    <input type="password" name ="password" id="password" title="password">
-                    <br><br>
-                    <input type="submit" value="sign in">
-                </form>
-            </div>
-
-        </div>
-
+    <body>
+    <video
+            autoplay="autoplay"
+            preload="auto"
+            loop="loop"
+            muted="muted"
+            width="100%"
+            height="auto"
+            playsinline="playsinline" id="video">
+        <source src="./video/VID_20200209_025422.mp4" type="video/mp4">
+    </video>
+        <header>
+        	<div class="main">
+                <div class="logo">
+                    <img src="css/images/logo.png" alt="">
+                </div>
+        		<ul>
+        			<li><a href="pages/login.jsp">sign in</a></li>
+        			<li><a href="pages/registration.jsp">sign up</a></li>
+        		</ul>
+        	</div>
+        </header>
     </body>
 </html>
