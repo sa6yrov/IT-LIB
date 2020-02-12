@@ -8,9 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class RegisterUser implements CanRegister {
-
-    @Override
+public class RegisterUser {
     public boolean register(User user) {
         String SQL = "insert into users (login, password, email, role_id, date_of_registration, is_active) values (?, ?, ?, ?, now(), ?)";
         try(Connection conn = DbConnection.connect();

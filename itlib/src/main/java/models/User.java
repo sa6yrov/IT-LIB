@@ -18,11 +18,9 @@ public class User {
     private Timestamp date_of_registration;
     private boolean is_active;
 
-    public User(String login, String password, String email, Timestamp date_of_registration, boolean is_active) {
+    public User(String login, String password, String email) {
         this.login = login;
         this.password = password;
         this.email = email;
-        this.date_of_registration = date_of_registration;
-        this.is_active = is_active;
     }
 }
