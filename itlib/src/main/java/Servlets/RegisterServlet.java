@@ -16,15 +16,17 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //test
+
         User user = new User(req.getParameter("login"), req.getParameter("password"), req.getParameter("email"));
-        System.out.println(user);
-//        RegisterUser registerUser = new RegisterUser();
-//        registerUser.register(user);
-//
-//        String birtDate = req.getParameter("date");
-//        Student student = new Student(req.getParameter("fullName"), req.ge);
-//        StudentDb studentDb = new StudentDb();
-//        studentDb.addStudentToDb(student);
+        RegisterUser registerUser = new RegisterUser();
+        System.out.println(registerUser.register(user));
+
+        int hash = user.hashCode();
+        Integer groupId = Integer.valueOf(req.getParameter("course"));
+        StudentDb studentDb = new StudentDb();
+        Student student = new Student(req.getParameter("fullName"), req.getParameter("date"), req.getParameter("gender"), groupId + "" + hash, req.getParameter("phone"),
+                                        groupId, studentDb.getUserId(user.getLogin()));
+        System.out.println(studentDb.addStudentToDb(student));
+
     }
 }

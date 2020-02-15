@@ -14,7 +14,7 @@ public class RegisterUser {
         try(Connection conn = DbConnection.connect();
             PreparedStatement pstmt = conn.prepareStatement(SQL)){
             pstmt.setString(1, user.getLogin());
-            pstmt.setString(2, getEncryptionPassword(user.getPassword()));
+            pstmt.setString(2, user.getPassword());
             pstmt.setString(3, user.getEmail());
             pstmt.setInt(4, 3);
             pstmt.setBoolean(5, true);

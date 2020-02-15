@@ -15,11 +15,11 @@
                 <div class="text-boxes">
                     <label class="label" for="course">Choose course*</label>
                     <select id = "course" name="course">
-                        <option value="java">JAVA</option>
-                        <option value="python">PYTHON</option>
-                        <option value="cSharp">C#</option>
-                        <option value="php">PHP</option>
-                        <option value="frontEnd">FRONT-END</option>
+                        <option value="1">JAVA</option>
+                        <option value="4">PYTHON</option>
+                        <option value="2">C#</option>
+                        <option value="3">PHP</option>
+                        <option value="5">FRONT-END</option>
                     </select>
                 </div>
                 <div class="phone-boxes">
@@ -28,13 +28,13 @@
                 </div>
                 <div class="date-box">
                     <label for="date" class="label">Birth date*</label>
-                    <input type="date" datatype="YYYY-MM-DD" id="date" name="date"/>
+                    <input type="date"  id="date" name="date"/>
                 </div>
                 <div class="gender-box">
                     <label for="gender" class="label">Gender</label>
                     <div id="gender">
-                        <input type="radio" name="gender">Male</input>
-                        <input type="radio" name="gender">Female</input>
+                        <input type="radio" value = "Male" name="gender">Male</input>
+                        <input type="radio" value = "Female" name="gender">Female</input>
                     </div>
                 </div>
                 <div class="text-boxes">
