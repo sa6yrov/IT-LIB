@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="/css/loginStyle.css" type="text/css">
     </head>
     <body>
+        <div class="logo">
+            <img src="/css/images/itlogo.png">
+        </div>
         <div class="login-box">
             <h2 align="center">Sign in</h2>
             <form action="">

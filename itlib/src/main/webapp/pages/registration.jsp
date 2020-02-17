@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="/css/registrStyle.css" type="text/css">
     </head>
     <body>
+        <div class="logo">
+            <img src="/css/images/itlogo.png">
+        </div>
         <div class="register-box">
             <h2 align="center">Sign up</h2>
             <form action="${pageContext.request.contextPath}/register" method="post">

@@ -21,12 +21,12 @@ public class RegisterServlet extends HttpServlet {
         RegisterUser registerUser = new RegisterUser();
         System.out.println(registerUser.register(user));
 
-        int hash = user.hashCode();
-        Integer groupId = Integer.valueOf(req.getParameter("course"));
-        StudentDb studentDb = new StudentDb();
-        Student student = new Student(req.getParameter("fullName"), req.getParameter("date"), req.getParameter("gender"), groupId + "" + hash, req.getParameter("phone"),
-                                        groupId, studentDb.getUserId(user.getLogin()));
-        System.out.println(studentDb.addStudentToDb(student));
+//        int hash = user.hashCode();
+//        Integer groupId = Integer.valueOf(req.getParameter("course"));
+//        StudentDb studentDb = new StudentDb();
+//        Student student = new Student(req.getParameter("fullName"), req.getParameter("date"), req.getParameter("gender"), groupId + "" + hash, req.getParameter("phone"),
+//                                        groupId, studentDb.getUserId(user.getLogin()));
+//        System.out.println(studentDb.addStudentToDb(student));
 
     }
 }
