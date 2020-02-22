@@ -8,6 +8,8 @@
         <div class="logo">
             <img src="/css/images/itlogo.png">
         </div>
-
+        <div class = "stuff">
+            <a href="${stuff}">Something</a>
+        </div>
     </body>
 </html>
